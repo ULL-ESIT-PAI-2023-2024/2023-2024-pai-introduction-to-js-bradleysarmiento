@@ -7,8 +7,80 @@
  * @author Thomas Edward Bradley
  * @author Daniel David Sarmiento Barrera
  * @since Jan 29 2024
- * @desc E
+ * @desc Code Examples Demonstrating Modern JavaScript Features
  * @see {@link https://github.com/ULL-ESIT-PAI-2023-2024/2023-2024-pai-introduction-to-js-bradleysarmiento.git}
  */
 
 'use strict';
+
+// FEATURES
+let cake = {
+  flavor: 'chocolate', 
+  color: 'brown'
+}
+let cakeWithIcing = {
+  ...cake,
+  icing: 'buttercream'
+}
+console.log(cakeWithIcing);
+/* {
+  flavor: 'chocolate',
+  color: 'brown',
+  icing: 'buttercream'
+} */
+
+
+// MODERN SHORTHAND
+let createCoordinates = (x, y) => {
+  return {
+    x,
+    y
+  }
+}
+
+createCoordinates = (x, y) => {
+  return {
+    x:x,
+    y:y
+  }
+}
+
+
+// MODERN JS METHOD PROPERTIES
+let math = {
+  add: function(a, b) { return a + b; },
+  sub: function(a, b) { return a - b; },
+  multiply: function(a, b) { return a * b; }
+}
+
+
+// MODERN JS ARRAY METHODS
+let array = [{id: 1, checked: true}, {id:2}];
+console.log(array.find(item => item.id == 2));
+// -> {id: 2}
+console.log(array.findIndex(item => item.id == 2));
+// -> 1
+console.log(array.some(item => item.checked));
+// -> true
+
+let numberArray = [1, 2, 3, 4];
+console.log(numberArray.includes(2));
+// -> true
+
+
+// FLAT
+console.log([1, 2, 3, [4, 5]].flat());
+// -> [ 1, 2, 3, 4, 5 ]
+console.log([1, 2, 3, [4, 5, [6, 7]]].flat());
+// -> [ 1, 2, 3, 4, 5, [ 6, 7 ] ]
+console.log([1, 2, 3, [4, 5, [6, 7]]].flat(2));
+// -> [ 1, 2, 3, 4, 5, 6, 7 ]
+
+
+// MODERN JS ARRAY/STRING - at()
+let words = ['I', 'like', 'turtles'];
+console.log(words[words.length - 1]);
+// -> turtles
+
+console.log(['I', 'like', 'turtles'].at(-1));
+// -> turtles
