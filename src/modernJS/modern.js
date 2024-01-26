@@ -31,26 +31,32 @@ console.log(cakeWithIcing);
 
 
 // MODERN SHORTHAND
-let createCoordinates = (x, y) => {
+let createCoordinates = (coordinateX, coordinateY) => {
   return {
-    x,
-    y
+    coordinateX,
+    coordinateY
   }
 }
 
-createCoordinates = (x, y) => {
+createCoordinates = (coordinateX, coordinateY) => {
   return {
-    x:x,
-    y:y
+    coordinateX:coordinateX,
+    coordinateY:coordinateY
   }
 }
 
 
 // MODERN JS METHOD PROPERTIES
 let math = {
-  add: function(a, b) { return a + b; },
-  sub: function(a, b) { return a - b; },
-  multiply: function(a, b) { return a * b; }
+  add: function(firstValue, secondValue) { return firstValue + secondValue; },
+  sub: function(firstValue, secondValue) { return firstValue - secondValue; },
+  multiply: function(firstValue, secondValue) { return firstValue * secondValue; }
+}
+
+math = {
+  add(firstValue, secondValue) { return firstValue + secondValue; },
+  sub(firstValue, secondValue) { return firstValue - secondValue; },
+  multiply(firstValue, secondValue) { return firstValue * secondValue; }
 }
 
 
