@@ -48,15 +48,15 @@ createCoordinates = (coordinateX, coordinateY) => {
 
 // MODERN JS METHOD PROPERTIES
 let math = {
-  add: function(firstValue, secondValue) { return firstValue + secondValue; },
-  sub: function(firstValue, secondValue) { return firstValue - secondValue; },
-  multiply: function(firstValue, secondValue) { return firstValue * secondValue; }
+  add: function(value1, value2) { return value1 + value2; },
+  sub: function(value1, value2) { return value1 - value2; },
+  multiply: function(value1, value2) { return value1 * value2; }
 }
 
 math = {
-  add(firstValue, secondValue) { return firstValue + secondValue; },
-  sub(firstValue, secondValue) { return firstValue - secondValue; },
-  multiply(firstValue, secondValue) { return firstValue * secondValue; }
+  add(value1, value2) { return value1 + value2; },
+  sub(value1, value2) { return value1 - value2; },
+  multiply(value1, value2) { return value1 * value2; }
 }
 
 
