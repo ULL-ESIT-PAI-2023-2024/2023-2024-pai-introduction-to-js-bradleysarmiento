@@ -49,7 +49,6 @@ console.log('Outside Function - ' + example);
 
 // GOOGLE STYLE GUIDE - BINDING NAMES
 let example = 'Hello World!';
-var exampleVar = 'Hello World!';
 const CONST_EXAMPLE = 'Hello World!';
 
 
